@@ -1,0 +1,18 @@
+spring:
+  datasource:
+  
+  #Datos para establecer la conexion a mi base de datos.
+    username: root
+    password: 
+    url: jdbc:mysql://localhost:3306/db_personas?serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    
+  #Configurando el pool de 5 conexiones
+    hikari:      maximum-pool-size: 5 #pool de conexiones
+     
+  jpa:    show-sql: true
+    hibernate:      ddl-auto: update
+    database-platform:  org.hibernate.dialect.MySQL5Dialect
+    
+    
+    
